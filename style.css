@@ -74,3 +74,21 @@ header {
     box-sizing: border-box;  /* Inclui padding e borda na largura total */
     text-align: justify;
 }
+/* Para telas menores que 768px */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Coloca a imagem e o texto um embaixo do outro */
+        align-items: center; /* Centraliza o conteúdo */
+        text-align: center; /* Centraliza o texto */
+    }
+
+    .redes-sociais {
+        padding-left: 0; /* Ajusta o padding para centralizar ou alinhar os ícones */
+        justify-content: center; /* Centraliza os ícones de redes sociais */
+    }
+
+    .quem-sou, .onde-trabalhei {
+        flex-direction: column; /* Coloca as divs uma embaixo da outra em vez de lado a lado */
+    }
+    
+}
